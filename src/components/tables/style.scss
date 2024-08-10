@@ -1,0 +1,99 @@
+@use "../../styles/variables" as *;
+
+.tables {
+	margin: 0;
+	column-count: 1;
+	column-gap: 20px;
+	padding: 10px;
+}
+
+@media screen and (min-width: 567px) {
+	.tables {
+		column-count: 2;
+		padding: 20px;
+	}
+}
+
+@media screen and (min-width: 768px) {
+	.tables {
+		column-count: 3;
+		padding: 30px;
+	}
+}
+
+@media screen and (min-width: 1024px) {
+	.tables {
+		column-count: 4;
+		padding: 40px;
+	}
+}
+
+.tables .table-card {
+	border: 1px solid $color5;
+	overflow: hidden;
+	margin-bottom: 20px;
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	-ms-border-radius: 10px;
+	-o-border-radius: 10px;
+}
+
+.tables .table-card .table-card-header {
+	padding: 5px;
+	margin: 0;
+	text-align: center;
+	background-color: aquamarine;
+	border-bottom: 1px dotted $color4;
+	position: relative;
+}
+
+.tables .table-card .table-card-header .user{
+	position: absolute;
+	left:10px;
+	top:8px;
+	font-size: 0.8rem;
+	color: $color6;
+}
+
+.tables .table-card .table-card-body {
+	padding: 10px;
+}
+
+.tables ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	line-height: 25px;
+}
+
+.tables ul li {
+	display: flex;
+	gap: 20px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	-ms-border-radius: 5px;
+	-o-border-radius: 5px;
+}
+
+.tables ul li:nth-child(odd) {
+	background-color: $color3;
+}
+
+.tables .table-card-footer {
+	margin: 0;
+	padding: 5px 10px;
+	background-color: $color5;
+	border-bottom: 1px dotted $color4;
+	display: flex;
+	align-items: center;
+	justify-content: end;
+	gap: 5px;
+}
+
+.tables .table-card-footer .icon{
+	color: $color6;
+	margin-top:2px;
+}

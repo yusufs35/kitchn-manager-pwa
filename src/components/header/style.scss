@@ -1,0 +1,115 @@
+@use "../../styles/variables" as *;
+
+.header {
+	background-image: linear-gradient(90deg, $color2, $color1, $color2);
+	padding: 15px 20px;
+	border-bottom: 1px dotted $color4;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	gap: 10px;
+
+	@media (min-width: 768px) {
+		gap: 50px;
+	}
+
+	@media (min-width: 1024px) {
+		gap: 70px;
+	}
+
+	@media (min-width: 1200px) {
+		gap: 100px;
+	}
+
+	.logo {
+		img {
+			width: 70px;
+			height: auto;
+		}
+	}
+
+	.stat-group {
+		display: flex;
+		justify-content: space-between;
+		flex: 1;
+	}
+
+	.stats {
+		display: flex;
+		align-items: start;
+		justify-content: center;
+		flex-direction: column;
+		text-align: left;
+		gap: 5px;
+		color: $color6;
+		cursor: pointer;
+
+		box-shadow: 0 0 2px $color4;
+		margin: 0;
+		padding: 10px;
+		list-style: none;
+		line-height: 20px;
+		border-radius: 10px;
+		-webkit-border-radius: 10px;
+		-moz-border-radius: 10px;
+		-ms-border-radius: 10px;
+		-o-border-radius: 10px;
+
+		span {
+			color: $color6;
+		}
+
+		a {
+			display: flex;
+			align-items: center;
+			gap: 5px;
+		}
+
+		.title {
+			display: none;
+		}
+
+		.icon {
+			font-size: 1.2rem;
+			font-weight: 700;
+		}
+
+		.score {
+			font-weight: 700;
+		}
+
+		@media (min-width: 1024px) {
+			.title {
+				display: block;
+			}
+		}
+	}
+
+	.pending-orders {
+		font-size: 1.6rem;
+		font-weight: 600;
+
+		.icon {
+			font-size: 1.6rem;
+		}
+	}
+
+	.toolbar {
+		display: flex;
+		align-items: center;
+		gap: 5px;
+		text-decoration: none;
+		color: $color6;
+
+		svg {
+			font-size: 1.3rem;
+		}
+
+		span {
+			display: none;
+			@media (min-width: 576px) {
+				display: block;
+			}
+		}
+	}
+}
