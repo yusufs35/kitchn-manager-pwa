@@ -1,5 +1,5 @@
 import { GroupedOrder, GroupedOrders } from "../types/grouped-order";
-import { Order, Product } from "../types/order";
+import { Order } from "../types/order";
 /* 
 type GroupedOrders<Order> = {
 	[key: string]: Order;

@@ -1,4 +1,3 @@
-import React from "react";
 import { GroupedProduct } from "../../types/grouped-order";
 
 type PropTypes = {
