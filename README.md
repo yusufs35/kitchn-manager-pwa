@@ -1,30 +1,12 @@
-# React + TypeScript + Vite
+# Kitchen Management PWA App
+This application manages the workflow between  waiters and kitchen staff.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-Currently, two official plugins are available:
+## Why I chosed PWA for the app:
+In developing our workflow management system that bridges communication between waiters and kitchen staff, we carefully considered various platforms, including Progressive Web Apps (PWA), native mobile apps, and hybrid apps. After weighing the pros and cons of each, we chose PWA as the optimal solution for several key reasons:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. ### Cross-Platform Compatibility:
+  - PWA: PWAs are inherently cross-platform. They run seamlessly on any device with a modern web browser, be it Android, iOS, Windows, or macOS. This means that our app is instantly available to any device without needing a separate version for each operating system.
+  - Native Apps: Native apps require separate development for each platform (e.g., Java/Kotlin for Android and Swift/Objective-C for iOS), which increases both development time and cost.
+  - Hybrid Apps: Hybrid apps use a single codebase for multiple platforms, but still need a wrapper for each operating system, often leading to less optimal performance compared to PWAs.
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
